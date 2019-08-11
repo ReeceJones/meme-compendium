@@ -17,3 +17,5 @@ meme-compendium-test-*
 *.png
 *.jpeg
 !/public/resources/background.jpg
+.DS_Store
+
