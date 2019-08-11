@@ -1,0 +1,10 @@
+<?D 
+  import meme.random;
+
+  string memeLocation = req.requestURI[req.requestURI.indexOf("m/") + "m/".length..$];
+  // stay in public
+  if (memeLocation.indexOf('/') != -1)
+    memeLocation = randomMeme();
+/?>
+
+<include:image.html/>

@@ -1,0 +1,14 @@
+{
+	"authors": [
+		"Reece Jones"
+	],
+	"copyright": "Copyright © 2019, Reece Jones",
+	"dependencies": {
+		"mood": "~>0.2.1",
+		"vibe-d": "~>0.8.5"
+	},
+	"description": "The meme compendium.",
+	"license": "proprietary",
+	"name": "meme-compendium",
+  "versions": ["VibeDefaultMain"]
+}
