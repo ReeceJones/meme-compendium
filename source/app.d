@@ -14,7 +14,7 @@ shared static this()
   router.get("*", serveStaticFiles("public/"));
 
   auto settings = new HTTPServerSettings;
-	settings.port = 9001;
+	settings.port = 9003;
 	settings.bindAddresses = ["::1", "0.0.0.0"];
   
 	listenHTTP(settings, router);
