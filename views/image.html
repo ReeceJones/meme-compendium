@@ -1,48 +1,61 @@
 <!DOCTYPE html>
-<hmtl>
-    <head>
-        <?D
-            output(`<title>Meme Compendium - ` ~ memeLocation ~ `</title>`);
-        /?>
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet"> 
-        <style>
-            * {
-                font-family: 'Noto Sans', sans-serif;
-            }
-            h3 {
-                color: whitesmoke;
-            }
-            html {
-                background-image: url("/resources/background.jpg");
-                background-blend-mode: overlay;
-                background-color: #111111;
-            }
-            input {
-                font-size: 0.8rem;
-            }
-            .center {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
-            }
-            .fill {
-                max-width: 600px;
-            }
-            button {
-                font-size: 1rem;
-                background-color: whitesmoke;
-                border: none;
-                box-shadow: none;
-            }
-        </style>
-    </head>
-    <body>
-        <?D
-            output(`<img class="center fill" src="/` ~ memeLocation ~ `"/>`);
-            output(`<br><button class="center" style="width: 150px" value="New Meme" onclick="window.location = '/'">New Meme</button>`);
-            output(`<h3 class="center"><strong>Perma Link</strong></h3>`);
-            output(`<input class="center fill" readonly value="compendium.reece.ooo/m/` ~ memeLocation ~ `"/>`);
-        /?>
-    </body>
-</hmtl>
+<head>
+    <?D
+        output(`<title>Meme Compendium - ` ~ memeLocation ~ `</title>`);
+    /?>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        h3 {
+            color: whitesmoke;
+        }
+        html {
+            background-image: url("/resources/background.jpg");
+            background-blend-mode: overlay;
+            background-color: #111111;
+        }
+        input {
+            font-size: 0.8rem;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .fill {
+            max-width: 600px;
+        }
+        button {
+            font-size: 1rem;
+            background-color: whitesmoke;
+            border: none;
+            box-shadow: none;
+        }
+        p {
+            color: whitesmoke;
+            font-size: 0.5rem;
+        }
+        p a {
+            color: lightblue;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <?D
+        output(`<img class="center fill" src="/` ~ memeLocation ~ `"/>`);
+        output(`<br><button class="center" style="width: 150px" value="New Meme" onclick="window.location = '/'">New Meme</button>`);
+        output(`<h3 class="center"><strong>Perma Link</strong></h3>`);
+        output(`<input class="center fill" readonly value="compendium.reece.ooo/m/` ~ memeLocation ~ `"/>`);
+    /?>
+</body>
+<footer>
+    <br>
+    <p>The images contained herein this site are not a representation of my personal beliefs or views. If you have an issue with an image, or have a copyright concern, please contact me <a href="mailto:reece_jones@icloud.com">here</a></p>
+</footer>
